@@ -17,7 +17,7 @@ export default function Home() {
           className="text-2xl font-bold mb-8 bg-gray-200 p-4 rounded"
           style={{ color: "#3f2c96" }}
         >
-          ▼ 親要素指定なし・子要素width={300}・height={300}
+          ▼ ① 親要素指定なし・子要素width={300}・height={300}
         </h1>
 
         <div className="grid grid-cols-3 gap-5 mb-10">
@@ -141,7 +141,7 @@ export default function Home() {
           className="text-2xl font-bold mb-8 bg-gray-200 p-4 rounded"
           style={{ color: "#3f2c96" }}
         >
-          ▼ 親要素 w-[300px] h-[300px]・子要素 width={300}・height={300}
+          ▼ ② 親要素 w-[300px] h-[300px]・子要素 width={300}・height={300}
         </h1>
 
         <div className="grid grid-cols-3 gap-5 mb-10">
@@ -266,7 +266,7 @@ export default function Home() {
           className="text-2xl font-bold mb-8 bg-gray-200 p-4 rounded"
           style={{ color: "#3f2c96" }}
         >
-          ▼ 親要素 w-[300px] h-[300px]・子要素 width={600}・height={600}
+          ▼ ③ 親要素 w-[300px] h-[300px]・子要素 width={600}・height={600}
         </h1>
 
         <div className="grid grid-cols-3 gap-5 mb-10">
@@ -391,7 +391,7 @@ export default function Home() {
           className="text-2xl font-bold mb-8 bg-gray-200 p-4 rounded"
           style={{ color: "#3f2c96" }}
         >
-          ▼ 親要素 w-[300px] h-[300px]・子要素 fill
+          ▼ ④ 親要素 w-[300px] h-[300px]・子要素 fill
         </h1>
 
         <div className="grid grid-cols-3 gap-5 mb-10">
