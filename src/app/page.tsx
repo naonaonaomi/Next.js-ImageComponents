@@ -19,12 +19,12 @@ export default function Home() {
         >
           ① 親要素指定なし・子要素width={300}・height={300}
         </h1>
-        <p className="text-lg mb-8 bg-gray-200 p-4 ">
+        <p className="text-lg mb-8 bg-gray-200 p-4 text-gray-600">
+          レスポンシブに対応している。
+          <br />
           どの画像も、ブラウザで100%表示ではガビガビしている。
           <br />
-          拡大すると、【600px】～がきれいに見える。
-          <br />
-          拡大しても、ある一定の大きさ以上にならない。
+          拡大すると、【600px】～がきれいに見えるが、ある一定の大きさ以上にならない。
         </p>
 
         <div className="grid grid-cols-3 gap-5 mb-10">
@@ -150,7 +150,7 @@ export default function Home() {
         >
           ② 親要素 w-[300px] h-[300px]・子要素 width={300}・height={300}
         </h1>
-        <p className="text-lg mb-8 bg-gray-200 p-4 ">
+        <p className="text-lg mb-8 bg-gray-200 p-4 text-gray-600">
           どの画像も、ブラウザで100%表示ではガビガビしている。①と同じ結果になる
           <br />
           拡大すると一定の大きさまではきれいだが、それ以上は全てガビっている。
@@ -279,7 +279,7 @@ export default function Home() {
         >
           ③ 親要素 w-[300px] h-[300px]・子要素 width={600}・height={600}
         </h1>
-        <p className="text-lg mb-8 bg-gray-200 p-4 ">
+        <p className="text-lg mb-8 bg-gray-200 p-4 text-gray-600">
           Obsidian 【600px】～【2000px】きれいに表示される。
           <br />
           拡大すると一定の大きさまではきれいだが、それ以上は全てガビっている。
@@ -408,7 +408,7 @@ export default function Home() {
         >
           ④ 親要素 w-[300px] h-[300px]・子要素 fill
         </h1>
-        <p className="text-lg mb-8 bg-gray-200 p-4 ">
+        <p className="text-lg mb-8 bg-gray-200 p-4 text-gray-600">
           Obsidian 【600px】～【2000px】きれいに表示される。
           <br />
           拡大すればするほど、高解像度の画像が美しい
@@ -508,11 +508,32 @@ export default function Home() {
         >
           まとめ
         </h1>
-        <p className="text-lg mb-8 bg-gray-200 p-4 ">
-          親要素 w-[●●●px] h-[▲▲▲px]・子要素 fill の組み合わせで、
-          <br />
-          画像サイズは、親要素の２倍が美しいと感じた。
-        </p>
+        <div className="text-lg mb-8 bg-gray-200 p-4 text-gray-600">
+          <table className="w-full border-collapse border border-gray-400">
+            <thead>
+              <tr className="bg-gray-300">
+                <th className="border border-gray-400 p-2 text-left">用途</th>
+                <th className="border border-gray-400 p-2 text-left">親要素</th>
+                <th className="border border-gray-400 p-2 text-left">子要素</th>
+                <th className="border border-gray-400 p-2 text-left">画像サイズ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-400 p-2 font-medium">一般的なWEBサイト</td>
+                <td className="border border-gray-400 p-2">w-[●px] h-[▲px]</td>
+                <td className="border border-gray-400 p-2">width=2*● height=2*▲</td>
+                <td className="border border-gray-400 p-2">子要素のサイズ</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-400 p-2 font-medium">高画質が求められる場合</td>
+                <td className="border border-gray-400 p-2">w-[●px] h-[▲px]</td>
+                <td className="border border-gray-400 p-2">fill</td>
+                <td className="border border-gray-400 p-2">可能な限り大きな画像（1200px ~ 2000px）</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
 
       <footer className="text-center text-sm text-gray-500 mb-20">
