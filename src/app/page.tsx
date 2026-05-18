@@ -515,21 +515,39 @@ export default function Home() {
                 <th className="border border-gray-400 p-2 text-left">用途</th>
                 <th className="border border-gray-400 p-2 text-left">親要素</th>
                 <th className="border border-gray-400 p-2 text-left">子要素</th>
-                <th className="border border-gray-400 p-2 text-left">画像サイズ</th>
+                <th className="border border-gray-400 p-2 text-left">
+                  画像サイズ
+                </th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="border border-gray-400 p-2 font-medium">一般的なWEBサイト</td>
+                <td className="border border-gray-400 p-2 font-medium">
+                  静的なWEBサイト
+                </td>
                 <td className="border border-gray-400 p-2">w-[●px] h-[▲px]</td>
-                <td className="border border-gray-400 p-2">width=2*● height=2*▲</td>
-                <td className="border border-gray-400 p-2">子要素のサイズ</td>
+                <td className="border border-gray-400 p-2"> ← と同サイズ</td>
+                <td className="border border-gray-400 p-2"> ← の２倍サイズ</td>
               </tr>
+              
+              <tr>
+                <td className="border border-gray-400 p-2 font-medium">
+                  ユーザーが画像を登録する場合
+                </td>
+                <td className="border border-gray-400 p-2">w-[●px] h-[▲px]</td>
+                <td className="border border-gray-400 p-2"> ← と同サイズ</td>
+                <td className="border border-gray-400 p-2">ユーザーが指定</td>
+              </tr>
+
               <tr className="bg-gray-50">
-                <td className="border border-gray-400 p-2 font-medium">高画質が求められる場合</td>
+                <td className="border border-gray-400 p-2 font-medium">
+                  高画質が求められる場合
+                </td>
                 <td className="border border-gray-400 p-2">w-[●px] h-[▲px]</td>
                 <td className="border border-gray-400 p-2">fill</td>
-                <td className="border border-gray-400 p-2">可能な限り大きな画像（1200px ~ 2000px）</td>
+                <td className="border border-gray-400 p-2">
+                  可能な限り大きな画像（1200px ~ 2000px）
+                </td>
               </tr>
             </tbody>
           </table>
