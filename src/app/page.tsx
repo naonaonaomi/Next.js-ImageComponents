@@ -555,7 +555,7 @@ export default function Home() {
       </div>
 
       <footer className="text-center text-sm text-gray-500 mb-20">
-        <p>© 2025 松尾直実　｜　最終更新日: 2025-08-06</p>
+        <p>© 2026 松尾直実　｜　最終更新日: 2026-05-18</p>
       </footer>
     </>
   );
